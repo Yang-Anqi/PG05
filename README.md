@@ -4,20 +4,22 @@ This project implements a CXR image classification task based on PyTorch and inc
 
 The file is named after the pretrained models used, with ResNet18 and EfficientNet being the primary models we experimented with. It includes the following features:
 
-Data Preprocessing: Supports operations such as image resizing, random horizontal flipping, and random rotation.
+**Data Preprocessing**: Supports operations such as image resizing, random horizontal flipping, and random rotation.
 
-Model Definition: Custom models based on ResNet18/50/101 and EfficientNet, with support for feature extraction module extensions such as Gabor Filters.
+**Model Definition**: Custom models based on ResNet18/50/101 and EfficientNet, with support for feature extraction module extensions such as Gabor Filters.
 
-Training and Validation: Uses K-fold cross-validation for model training and supports dynamic saving of model parameters.
+**Training and Validation**: Uses K-fold cross-validation for model training and supports dynamic saving of model parameters.
 
-Testing and Evaluation: Calculates test set accuracy and generates a confusion matrix.
+**Testing and Evaluation**: Calculates test set accuracy and generates a confusion matrix.
 
-Grad-CAM Visualization: Generates Grad-CAM heatmaps for misclassified samples to help understand model decisions.
+**Grad-CAM Visualization**: Generates Grad-CAM heatmaps for misclassified samples to help understand model decisions.
 
-About Dataset:
+## About Dataset:
+
 The dataset structure is described in the "Data Preprocessing" code block in the file.
 
 The original dataset comes from https://www.kaggle.com/datasets/unaissait/curated-chest-xray-image-dataset-for-covid19?utm_source=chatgpt.com
 
 For the dataset we used for training, three preprocessing steps were applied: merging the COVID-19 and Pneumonia-Viral classes, removing duplicates, and cropping the lung regions. The corresponding processed dataset is available at https://drive.google.com/drive/folders/1iEyI_RQc_DbJZmpQQxlX3ewfO_EUtBrh?usp=sharing
 
+We also provide processing code in the "find_similar" folder to identify identical images, as well as text files containing the names of identical images under each category.
