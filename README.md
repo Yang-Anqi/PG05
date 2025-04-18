@@ -13,3 +13,11 @@ Training and Validation: Uses K-fold cross-validation for model training and sup
 Testing and Evaluation: Calculates test set accuracy and generates a confusion matrix.
 
 Grad-CAM Visualization: Generates Grad-CAM heatmaps for misclassified samples to help understand model decisions.
+
+About Dataset:
+The dataset structure is described in the "Data Preprocessing" code block in the file.
+
+The original dataset comes from https://www.kaggle.com/datasets/unaissait/curated-chest-xray-image-dataset-for-covid19?utm_source=chatgpt.com
+
+For the dataset we used for training, three preprocessing steps were applied: merging the COVID-19 and Pneumonia-Viral classes, removing duplicates, and cropping the lung regions. The corresponding processed dataset is available at https://drive.google.com/drive/folders/1iEyI_RQc_DbJZmpQQxlX3ewfO_EUtBrh?usp=sharing
+
