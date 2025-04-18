@@ -23,3 +23,14 @@ The original dataset comes from https://www.kaggle.com/datasets/unaissait/curate
 For the dataset we used for training, three preprocessing steps were applied: merging the COVID-19 and Pneumonia-Viral classes, removing duplicates, and cropping the lung regions. The corresponding processed dataset is available at https://drive.google.com/drive/folders/1iEyI_RQc_DbJZmpQQxlX3ewfO_EUtBrh?usp=sharing
 
 We also provide processing code in the "find_similar" folder to identify identical images, as well as text files containing the names of identical images under each category.
+
+## About Environment and GPU Hardware Configuration:
+The environment is specified in the requirements.txt, and the hardware configuration for training the model is as follows:
+
+Graphics Card: RTX 4060 Laptop GPU, CUDA Version: 12.6
+
+Memory: 8GB GDDR6
+
+Equipped with 3072 CUDA cores and 4th Gen Tensor Cores
+
+**Note:** The versions provided in requirements.txt are compatible with CUDA 12.6. If your CUDA version is different, please select versions of certain packages, such as PyTorch and torchvision, that are compatible with your CUDA version.
