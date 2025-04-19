@@ -34,3 +34,7 @@ Memory: 8GB GDDR6
 Equipped with 3072 CUDA cores and 4th Gen Tensor Cores
 
 **Note:** The versions provided in requirements.txt are compatible with CUDA 12.6. If your CUDA version is different, please select versions of certain packages, such as PyTorch and torchvision, that are compatible with your CUDA version.
+
+## About Preprocessing:
+The pre-trained model used for lung cropping is from: https://github.com/IlliaOvcharenko/lung-segmentation
+The pre-trained model used for denoising is from: https://github.com/swz30/MPRNet
